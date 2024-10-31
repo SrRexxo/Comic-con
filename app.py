@@ -42,9 +42,8 @@ st.subheader(":violet[CONTROLADO POR VOZ]")
 image = Image.open('voice_ctrl.jpg')
 
 st.image(image, width=200)
-    
-write_colored_text("Toca el Boton y habla", "Black")
-stt_button = Button(label="Inicio", width=500)
+
+stt_button = Button(label "Inicializar", width= 100)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
