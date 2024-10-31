@@ -42,9 +42,12 @@ def local_css(file_name):
 
 local_css("style.css")
 
-st.write("Toca el Botón y habla ")
 
-stt_button = Button(label=" Inicio ", width=500, height= 200)
+def write_colored_text(text, color):
+    st.markdown(f"<span style='color: {color};'>{text}</span>", unsafe_allow_html=True)
+    
+write_colored_text("Toca el Boton y habla", "Black")
+stt_button = Button(label="Inicio", width=500, height= 200)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
