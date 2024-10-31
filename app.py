@@ -38,7 +38,7 @@ client1.on_message = on_message
 
 
 write_colored_text("Controlador Tikal</h1>", "white")
-st.header(":white[Interfaces Multimodales]")
+st.header(":red[Interfaces Multimodales]")
 st.subheader("CONTROL POR VOZ")
 
 image = Image.open('voice_ctrl.jpg')
