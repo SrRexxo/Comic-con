@@ -43,7 +43,7 @@ image = Image.open('voice_ctrl.jpg')
 
 st.image(image, width=200)
 
-stt_button = Button(label= "Inicializar", width= 100, height= 120)
+stt_button = Button(label= "Inicializar", width= 500, height= 120)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
