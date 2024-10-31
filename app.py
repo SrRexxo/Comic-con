@@ -37,7 +37,7 @@ client1= paho.Client("Rami_rez")
 client1.on_message = on_message
 
 
-write_colored_text("Controlador Tikal</h1>")
+write_colored_text("Controlador Tikal</h1>", "white")
 st.title("Interfaces Multimodales")
 st.subheader("CONTROL POR VOZ")
 
