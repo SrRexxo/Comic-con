@@ -21,21 +21,6 @@ def on_message(client, userdata, message):
     message_received=str(message.payload.decode("utf-8"))
     st.write(message_received)
 
-broker="broker.mqttdashboard.com"
-port=1883
-client1= paho.Client("Rami_rez")
-client1.on_message = on_message
-
-
-
-st.title("Interfaces Multimodales")
-st.subheader("CONTROL POR VOZ")
-
-image = Image.open('voice_ctrl.jpg')
-
-st.image(image, width=200)
-
-
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
@@ -45,6 +30,20 @@ local_css("style.css")
 
 def write_colored_text(text, color):
     st.markdown(f"<span style='color: {color};'>{text}</span>", unsafe_allow_html=True)
+
+broker="broker.mqttdashboard.com"
+port=1883
+client1= paho.Client("Rami_rez")
+client1.on_message = on_message
+
+
+write_colored_text("Controlador Tikal</h1>")
+st.title("Interfaces Multimodales")
+st.subheader("CONTROL POR VOZ")
+
+image = Image.open('voice_ctrl.jpg')
+
+st.image(image, width=200)
     
 write_colored_text("Toca el Boton y habla", "Black")
 stt_button = Button(label="Inicio", width=500, height= 200)
