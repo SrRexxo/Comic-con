@@ -37,7 +37,7 @@ client1= paho.Client("Rami_rez")
 client1.on_message = on_message
 
 st.title(":violet[Controlador tikalí]")
-st.subheader(:violet[CONTROLADO POR VOZ])
+st.subheader(":violet[CONTROLADO POR VOZ]")
 
 image = Image.open('voice_ctrl.jpg')
 
