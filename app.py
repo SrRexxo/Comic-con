@@ -40,7 +40,7 @@ st.title(":violet[Controlador tikalí]")
 
 
 
-stt_button = Button(label= "Inicializar", type="primary", width= 700, height= 120)
+stt_button = Button(label= "Inicializar", width= 700, height= 120)
 
 stt_button.js_on_event("button_click", CustomJS(code="""
     var recognition = new webkitSpeechRecognition();
