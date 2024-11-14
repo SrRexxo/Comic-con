@@ -37,11 +37,8 @@ client1= paho.Client("Ramirez_h")
 client1.on_message = on_message
 
 st.title(":violet[Controlador tikalí]")
-st.subheader(":violet[CONTROLADO POR VOZ]")
 
-image = Image.open('voice_ctrl.jpg')
 
-st.image(image, width=200)
 
 stt_button = Button(label= "Inicializar", width= 700, height= 120)
 
