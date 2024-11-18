@@ -33,7 +33,7 @@ def write_colored_text(text, color):
 
 broker="broker.mqttdashboard.com"
 port=1883
-client1= paho.Client("Ramirez_h")
+client1= paho.Client("mat_rh")
 client1.on_message = on_message
 
 st.title(":violet[Controlador tikalí]")
