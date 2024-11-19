@@ -31,7 +31,7 @@ local_css("style.css")
 def write_colored_text(text, color):
     st.markdown(f"<span style='color: {color};'>{text}</span>", unsafe_allow_html=True)
 
-broker="broker.mqttdashboard.com"
+broker="broker.emqx.io"
 port=1883
 client1= paho.Client("mat_rh")
 client1.on_message = on_message
