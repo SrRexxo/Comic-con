@@ -72,7 +72,7 @@ result = streamlit_bokeh_events(
 if result:
     if "GET_TEXT" in result:
         st.write(result.get("GET_TEXT"))
-        client1.on_publish = cosplay                            
+        client1.on_publish = on_publish                             
         client1.connect(broker,port)  
         message =json.dumps({"Act1":result.get("GET_TEXT").strip()})
         ret= client1.publish("cosplay", message)
